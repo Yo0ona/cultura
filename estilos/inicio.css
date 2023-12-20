@@ -1,0 +1,552 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'open Sans', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: cover;
+    background-color: #34495E;
+
+}
+.body2{
+    border: 2px solid #34495E;
+    color: #dcdcdc;
+}
+
+.header {
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    padding: 100px 0;
+    position: relative;
+
+}
+
+img {
+    padding: auto;
+
+}
+
+.seccion1 {
+
+    margin: 0;
+    padding: 0;
+
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    height: 600px;
+    width: 100%;
+    align-items: center;
+
+}
+
+
+.portada {
+    background: linear-gradient(50deg,
+            rgba(40, 42, 55, 1) 0%,
+            rgba(40, 42, 55, 0.8)),
+        url(/imagenes/montaña.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: cover;
+
+}
+
+
+
+h2,
+h4,
+small,
+a {
+    margin: 0;
+    padding: 0;
+
+
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    
+}
+.navbar a:hover{
+    border-radius: 40px;
+    color: white;
+    box-shadow: 0 0 100px #00BFFF;
+}
+.logoo:hover{
+    box-shadow: 0 0 0px green;
+}
+
+.carruselpro {
+    margin: 2px solid red;
+    width: 100%;
+    margin: 0px 0px;
+
+}
+
+@media(min-width:768px) {
+    .carruselpro {
+        margin: 0px 60px;
+    }
+}
+
+.carrusel h2 {
+
+    font-size: 45px;
+    line-height: 38px;
+    padding-bottom: 50px;
+    opacity: .9;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+    align-content: center;
+    color: #fff;
+}
+
+.carrusel-list {
+
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    height: 304px;
+    padding: 10px 0px;
+    margin: 0px auto;
+    max-width: 90vw;
+    overflow: hidden;
+
+}
+
+.carrusel-track {
+
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    transition: .5s ease-in-out;
+}
+
+.carrusel {
+    position: relative;
+    width: 210px;
+    padding: 0px 18px;
+    float: left;
+    box-sizing: border-box;
+    display: flex;
+    height: 100%;
+}
+
+.carrusel h4 {
+    position: absolute;
+    z-index: 1;
+    font-size: 22px;
+    line-height: 23px;
+    color: white;
+    padding: 15px;
+
+}
+
+
+
+
+.carrusel a img {
+
+    object-fit: cover;
+    height: 300px;
+    width: 220px;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px 0 rgbs(0, 0, 0, 0.5);
+    transition: .3s ease-in-out;
+}
+
+.PP {
+
+    padding-top: 20PX;
+    text-align: center;
+}
+
+@media(min-width:768) {
+    .carrusel {
+        width: 275px;
+    }
+
+    .carrusel a img {
+        width: 250px;
+    }
+}
+
+.carrusel-arrow {
+    border-radius: 30px;
+    background-color: white;
+    position: absolute;
+    z-index: 4;
+    width: 48px;
+    height: 48px;
+    text-align: center;
+    border: 0;
+    cursor: pointer;
+}
+
+.carrusel-arrow:focus {
+    outline: 0;
+}
+
+.carrusel-arrow svg {
+    width: 12px;
+    height: 100%;
+    color: black;
+}
+
+.carrusel-prev {
+    left: 0px;
+}
+
+.carrusel-next {
+    right: 0px;
+}
+
+
+/*SECCION DE INFORMACION*/
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.menu {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 1000;
+}
+
+.logo {
+    color: black;
+    font-size: 100;
+    font-weight: 1000;
+    text-transform: uppercase;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 20px;
+    padding: 20px;
+
+    color: white;
+    display: block;
+text-decoration: none;
+    font-weight: 600;
+}
+
+.menu .navbar ul li a:hover {
+    color: white
+
+}
+
+#menu {
+    display: none;
+}
+
+/*TAMAÑO DE ICONO*/
+.menu-icono {
+    width: 100px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+p {
+    font-size: 16px;
+    color: white;
+}
+
+.about {
+    padding: 50px 0;
+    background: #34495E;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+}
+
+/*EL TEXTO SE VUELVE FELXIBLE EN U 50%*/
+.about-txt {
+
+    flex-basis: 50%;
+    padding-right: 35px;
+    text-align: justify;
+}
+
+.about-img {
+    flex-basis: 50%;
+    text-align: center;
+}
+
+.about-img img {
+    width: 800px;
+    border-radius: 10%;
+}
+
+hr {
+    border: 5px solid #7B241C;
+    width: 100%;
+    width: 100%;
+
+
+}
+
+h2 {
+    font-size: 42px;
+    color: white;
+    text-align: center;
+}
+
+.mapa {
+    background-color: white;
+    border-radius: 20px;
+    text-align: center;
+
+
+    width: 40%;
+}
+
+
+
+@media (max-width: 965px) {
+
+    .menu {
+        padding: 0px;
+        font-size: 1px;
+
+    }
+
+    .logoo {
+        display: none;
+    }
+
+    .menu label {
+        display: initial;
+    }
+
+    .navbar li {
+        margin: 4px;
+    }
+
+    .menu .navbar {
+        position: absolute;
+        padding: 30%;
+        border: 100%;
+        top: 100%;
+        left: 0;
+        right: 0;
+        display: none;
+        padding-top: 0%;
+
+
+        text-align: center;
+    }
+
+
+
+    .menu .navbar ul li {
+
+        width: 100%;
+        border-radius: 100px;
+
+        background-color: #081b29 ;
+        
+
+    }
+
+    a:hover{
+        border-radius: 40px;
+        background: var(--clr);
+        
+        box-shadow: 0 0 100px var(--clr);
+    }
+
+    #menu:checked~.navbar {
+        display: initial;
+    }
+
+    .about {
+        padding: 30px;
+    }
+
+    hr {
+        display: none;
+    }
+
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+
+    }
+
+    .about-txt {
+
+
+        padding-bottom: 25px;
+
+
+
+    }
+
+    .about-img {
+        flex-basis: 100%;
+        text-align: center;
+    }
+
+
+}
+
+@media (max-width: 360px) {
+    .about-txt {
+        margin-left: 25px;
+    }
+    .menu .navbar ul li a{
+        font-size: 15px;
+    }
+}
+
+/*footer*/
+.efecto {
+    padding: 0;
+    margin: 0;
+}
+
+footer {
+
+
+    width: 100%;
+    padding: 0px 0px;
+    background: linear-gradient(60deg,
+            rgba(40, 42, 55, 1) 0%,
+            rgba(40, 42, 55, 0.8)),
+        url(/imagenes/montaña.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    
+
+
+}
+
+.container-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 100%;
+    
+    margin-top: 80px;
+}
+
+.box_footer {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.box_footer .logo img {
+    width: 180px;
+}
+
+.box_footer .terms {
+    max-width: 350px;
+    margin: 20px;
+    font-weight: 500;
+    color: #7a7a7a;
+}
+
+.box_footer h2 {
+    margin-bottom: 30px;
+
+}
+
+.box_footer a {
+    margin-top: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.box_footer a:hover {
+    opacity: 0.8;
+}
+
+.box_copy {
+    text-align: center;
+}
+
+.box_copy hr {
+    border-color: rgba(255, 255, 255, 0.4);
+    border: none;
+    
+    height: 5px;
+    background-color: #7a7a7a;
+}
+
+.box_copy p {
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+.box_copy span {
+    color: #dcdcdc;
+}
+
+.box_footer .terms p {
+    text-align: justify;
+}
+
+.box_footer .logo {
+    text-align: center;
+}
+
+.bor{
+    
+    margin: 0 460px;
+}
+
+/*fin del footer*/
+
+/*panels*/
+
+
+
+
+
+
+.seccion2{
+    border: 2px solid #34495e;
+    background: #34495E;
+}
+
+.seccion2 img{
+    border-radius: 20px;
+}

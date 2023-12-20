@@ -1,0 +1,40 @@
+body{
+    background: linear-gradient(
+        20deg,
+        rgba(40,42,55,1) 0%,
+        rgba(40,42,55,0.8)),
+        url(/imagenes/montaña.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+       
+}
+
+
+.mapadiv{
+    width: 70%;
+    margin: auto;
+    padding: auto;
+}
+
+
+.mapadiv path{
+
+    fill: skyblue;
+    stroke: royalblue;
+    stroke-width: 2px;
+    
+}
+
+.mapadiv :hover{
+    fill: #708090;
+    
+    
+}
+
+
+

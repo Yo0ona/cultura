@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/estilos/galeria.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <div class="container">
+        <div class="heading">GALERIA</div>
+        <div class="imagen-container">
+
+            <div class="imagen">
+                <img loading="lazy" src="/imagenes/montaña.jpg" alt="">
+            </div>
+            
+            <div class="imagen">
+                <img src="/imagenes/montaña.jpg" alt="">
+            </div>
+            
+            <div class="imagen">
+                <img src="/imagenes/montaña.jpg" alt="">
+            </div>
+
+            <div class="imagen">
+                <img src="/imagenes/montaña.jpg" alt="">
+            </div>
+
+            <div class="imagen">
+                <img src="/imagenes/montaña.jpg" alt="">
+            </div>
+
+            <div class="imagen">
+                <img src="/imagenes/montaña.jpg" alt="">
+            </div>
+
+            <div class="imagen">
+                <img src="/imagenes/montaña.jpg" alt="">
+            </div>
+
+            <div class="imagen">
+                <img src="/imagenes/montaña.jpg" alt="">
+            </div>
+
+            <div class="imagen">
+                <img src="/imagenes/montaña.jpg" alt="">
+            </div>
+
+            <div class="imagen">
+                <img src="/imagenes/montaña.jpg" alt="">
+            </div>
+
+            <div class="imagen">
+                <img src="/imagenes/montaña.jpg" alt="">
+            </div>
+
+            <div class="imagen">
+                <img src="/imagenes/montaña.jpg" alt="">
+            </div>
+
+            <div class="imagen">
+                <img src="/imagenes/montaña.jpg" alt="">
+            </div>
+
+            <div class="imagen">
+                <img src="/imagenes/montaña.jpg" alt="">
+            </div>
+
+            <div class="imagen">
+                <img src="/imagenes/montaña.jpg" alt="">
+            </div>
+            
+
+        </div>
+    </div>
+
+    <script>
+        var imagen = document.querySelectorAll('img')
+        imagen.forEach(play => play.addEventListener('click',() =>{
+
+            play.classList.toggle('active')
+
+            
+        }));
+    </script>
+
+</body>
+
+</html>

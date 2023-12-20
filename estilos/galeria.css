@@ -1,0 +1,82 @@
+:root {
+    --purple: #8e44ad;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+
+
+body {
+    background: linear-gradient(20deg,
+            rgba(40, 42, 55, 1) 0%,
+            rgba(40, 42, 55, 0.8)),
+        url(/imagenes/montaña.jpg);
+    background-size: cover;
+}
+
+html {
+    font-size: 62%;
+}
+
+
+.container .heading {
+    font-size: 3rem;
+    margin: 2rem 0;
+    text-transform: capitalize;
+    color: var(--purple);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: .2rem;
+    text-align: center;
+    text-shadow: 0 .3rem .5rem rgbs(0, 0, 0, .5);
+}
+
+.imagen-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.imagen-container .imagen {
+    height: 25rem;
+    width: 30rem;
+    margin: 2rem;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .5);
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.imagen-container .imagen img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.imagen-container .imagen img:hover {
+    transition: .2s linear;
+    transform: scale(1.2);
+}
+
+.imagen-container .imagen .active {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: auto;
+    width: 80%;
+    box-shadow: 0 0 0 100vh rgba(0, 0, 0, .8);
+    z-index: 1;
+    border-radius: 20px;
+}
+
+.imagen-container .imagen .active:hover {
+    transition: none;
+    transform: translate(-50%, -50%) scale(1);
+}

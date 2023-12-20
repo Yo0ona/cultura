@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/contacto.css">
+    <title>CONTACTO</title>
+</head>
+<body>
+    <div class="form-content">
+        <h2>CONTACTANOS</h2>
+        <form action="https://formsubmit.co/yonacmc18@gmail.com" method="POST">
+            <label for="name">NOMBRE COMPLETO</label>
+            <input type="text" name="NOMBRE" id="name">
+
+            <label for="email">CORREO</label>
+            <input type="email" name="EMAIL" id="email">
+
+            <label for="subject">ASUNTO</label>
+            <input type="text" name="ASUNTO" id="subject">
+
+            <label for="coment">COMENTARIO</label>
+            <textarea name="coment" id="MENSAJE" cols="30" rows="5"></textarea>
+          
+            <input class="btn" type="submit" value="Enviar">
+
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500/">
+        </form>
+    </div>
+</body>
+</html>

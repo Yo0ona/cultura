@@ -31,13 +31,22 @@ a{
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.color{
+    background: #34495e;
+}
+
+main{
+    background: #34495e;
 }
 
 body{
     
     height: 100vh;
     width: 100%;
-    background-color: darkcyan;
+    
 }
 
 .menu{
@@ -55,10 +64,12 @@ body{
     right: 15px;
     top: 15px;
     z-index: 100;
+    
 }
 
 /*nombre del la pagina*/
 .barra-lateral{
+    background: #34495e;
     display: flex;
     position: fixed;
     flex-direction: column;
@@ -306,8 +317,10 @@ main.min-main{
 }
 
 .seccion2{
-    border: 2px solid #34495e;
-    background: #34495E;
+    
+    background: #34495e;
+    border-radius: 20px;
+
 }
 
 .seccion2 img{
